@@ -6,3 +6,7 @@
 ;; use 'M-x doom/reload'.
 
 (package! modus-themes)
+(package! telephone-line)
+(package! solaire-mode :disable t)
+(package! webfeeder)
+(package! org-bullets)
