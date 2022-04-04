@@ -6,8 +6,8 @@
 (setq user-full-name    "Yuki"
       user-mail-address "hi@yukiisbo.red")
 
-(setq doom-font (font-spec :family "Iosevka Slab" :size 12)
-      doom-variable-pitch-font (font-spec :family "Iosevka Etoile" :size 12))
+(setq doom-font (font-spec :family "Iosevka Term Slab" :size 14)
+      doom-variable-pitch-font (font-spec :family "Iosevka Etoile" :size 14))
 
 (setq display-line-numbers-type 'relative)
 
