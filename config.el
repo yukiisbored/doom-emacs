@@ -48,7 +48,13 @@
         telephone-line-primary-right-separator  'telephone-line-flat
         telephone-line-height                   24))
 
-(use-package org
+(use-package! direnv
+  :hook (after-init . direnv-mode))
+
+(use-package! lsp
+  :init
+  (advice-add 'lsp :before 'direnv-update-environment))
+
 (use-package! org
   :hook
   ((org-mode . (lambda () (hl-line-mode nil)))

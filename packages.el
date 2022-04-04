@@ -10,3 +10,4 @@
 (package! solaire-mode :disable t)
 (package! webfeeder)
 (package! org-bullets)
+(package! direnv)
