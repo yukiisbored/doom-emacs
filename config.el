@@ -49,6 +49,7 @@
         telephone-line-height                   24))
 
 (use-package org
+(use-package! org
   :hook
   ((org-mode . (lambda () (hl-line-mode nil)))
    (org-mode . auto-fill-mode)
@@ -225,7 +226,7 @@
                :publishing-function 'org-publish-attachment)
          (list "org" :components '("org-posts" "org-drafts" "org-static")))))
 
-(use-package webfeeder
+(use-package! webfeeder
   :after org
   :init
   (defun yuki/org-generate-feed ()
@@ -254,6 +255,6 @@
     (org-publish "org")
     (yuki/org-generate-feed)))
 
-(use-package org-bullets
+(use-package! org-bullets
   :hook (org-mode . org-bullets-mode)
   :init (setq org-bullets-bullet-list '(" ")))
