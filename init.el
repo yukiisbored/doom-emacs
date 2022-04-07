@@ -16,7 +16,7 @@
 
 (doom! :completion
        company                         ; the ultimate code completion backend
-       (vertico +icons)                ; the search engine of the future
+       (ivy +flx +prescient +icons)    ; /The/ search engine for love and life
 
        :ui
        doom                            ; what makes DOOM look the way it does
