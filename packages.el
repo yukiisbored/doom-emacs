@@ -11,3 +11,4 @@
 (package! webfeeder)
 (package! org-bullets)
 (package! direnv)
+(package! swiper)

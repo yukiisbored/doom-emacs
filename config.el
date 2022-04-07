@@ -20,6 +20,9 @@
 
 (setq indent-tabs-mode nil)
 
+(use-package! swiper
+  :bind ("C-s" . swiper))
+
 (use-package! modus-themes
   :init
   (setq modus-themes-syntax               '(yellow-comments green-strings alt-syntax)
