@@ -6,8 +6,7 @@
 (setq user-full-name    "Yuki"
       user-mail-address "hi@yukiisbo.red")
 
-(setq doom-font (font-spec :family "Iosevka Term Slab" :size 14)
-      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 14))
+(setq doom-font (font-spec :family "Iosevka Term Slab" :size 14))
 
 (setq display-line-numbers-type 'relative)
 
@@ -58,8 +57,7 @@
 (use-package! org
   :hook
   ((org-mode . (lambda () (hl-line-mode nil)))
-   (org-mode . auto-fill-mode)
-   (org-mode . variable-pitch-mode))
+   (org-mode . auto-fill-mode))
   :init
   (setq initial-major-mode                  'org-mode
         org-startup-indented                t
