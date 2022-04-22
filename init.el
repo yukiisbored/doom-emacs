@@ -48,7 +48,7 @@
        vc                              ; version-control and Emacs, sitting in a tree
 
        :term
-       eshell                          ; the elisp shell that works everywhere
+       vterm                           ; the best terminal emulation in Emacs
 
        :checkers
        syntax                          ; tasing you for every semicolon you forget
