@@ -63,6 +63,7 @@
 
        :os
        (:if IS-MAC macos)              ; improve compatibility with macOS
+       (tty +osc)                      ; improve the terminal Emacs experience
 
        :lang
        (cc +lsp)                       ; C > C++ == 1
