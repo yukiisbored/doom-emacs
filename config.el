@@ -57,6 +57,10 @@
   :init
   (advice-add 'lsp :before 'direnv-update-environment))
 
+(use-package! emacsql-sqlite
+  :init
+  (setq emacsql-sqlite-executable (locate-file "emacsql-sqlite" exec-path)))
+
 (use-package! org
   :hook
   ((org-mode . (lambda () (hl-line-mode nil)))
@@ -265,3 +269,16 @@
 (use-package! org-bullets
   :hook (org-mode . org-bullets-mode)
   :init (setq org-bullets-bullet-list '(" ")))
+
+(use-package! org-roam
+  :init (setq org-roam-directory "~/roam"))
+
+(use-package! websocket
+  :after org-roam)
+
+(use-package! org-roam-ui
+  :after org-roam
+  :init
+  (setq org-roam-ui-sync-theme     t
+        org-roam-ui-follow         t
+        org-roam-ui-update-on-save t))

@@ -12,3 +12,5 @@
 (package! org-bullets)
 (package! direnv)
 (package! swiper)
+(unpin! org-roam)
+(package! org-roam-ui)
