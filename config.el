@@ -20,6 +20,13 @@
 
 (setq indent-tabs-mode nil)
 
+(use-package! tree-sitter
+  :hook
+  ((after-init . global-tree-sitter-mode)
+   (tree-sitter-mode . tree-sitter-hl-mode)))
+
+(use-package! tree-sitter-langs)
+
 (use-package! swiper
   :bind ("C-s" . swiper))
 
